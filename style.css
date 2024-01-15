@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.principal {
+    height: 100vh;
+    width: 100%;
+    background-color: #0E0E0F;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    background-color: #0E0E0F;
+}
+
+.portfolio {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.portfolio span {
+    color: #3454DC;
+
+}
+
+li {
+    color: #ffffff;
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #3454DC;
+    transition: 0.2s;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.nome {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.nome span {
+    color: #3454DC
+}
+
+.minha-foto {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
