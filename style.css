@@ -22,6 +22,16 @@ nav {
     background-color: #0E0E0F;
 }
 
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #3454DC;
+    transition: 0.2s;
+}
+
 .portfolio {
     color: #ffffff;
     font-size: 35px;
@@ -56,10 +66,14 @@ h2 {
     font-size: 20px;
 }
 
+p {
+    color: #ffffff;
+}
+
 .nome {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 30%;
 }
 
 .nome span {
@@ -73,5 +87,48 @@ h2 {
     object-fit: cover;
     position: absolute;
     top: 40%;
-    left: 50%;
+    right: 30%;
+}
+
+section {
+    background-color: #0e0e0f;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+}
+
+.sobre {
+    width: 60%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sobre h2 {
+    color: #3454DC;
+}
+
+.sobre p {
+    text-align: justify; 
+    padding-top: 25px;
+    line-height:33px
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.button {
+    margin: 0 10px;
+
+}
+
+.button img {
+    width: 50px;
+    height: auto;
 }
