@@ -18,8 +18,14 @@ nav {
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #0E0E0F;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
 }
 
 nav a {
@@ -40,7 +46,6 @@ nav a:hover {
 
 .portfolio span {
     color: #3454DC;
-
 }
 
 li {
@@ -66,6 +71,11 @@ h2 {
     font-size: 20px;
 }
 
+h3 {
+    color: #ffffff;
+    font-size: 15px;
+}
+
 p {
     color: #ffffff;
 }
@@ -78,6 +88,30 @@ p {
 
 .nome span {
     color: #3454DC
+}
+
+.nome h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.links {
+    display: flex;
+    padding-top: 590px;
+    padding-left: 561px;
+}
+
+.button {
+    margin: 0 10px;
+}
+
+.button img {
+    width: 40px;
+    height: auto;
+}
+
+.button:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
 }
 
 .minha-foto {
@@ -114,21 +148,4 @@ section {
     text-align: justify; 
     padding-top: 25px;
     line-height:33px
-}
-
-.links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-}
-
-.button {
-    margin: 0 10px;
-
-}
-
-.button img {
-    width: 50px;
-    height: auto;
 }
