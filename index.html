@@ -11,18 +11,24 @@
     <title>Guilherme Maelby - Potfólio</title>
 </head>
 
-<body>
+<script src="script.js"></script>
 
+<body>
     <div class="principal" id="home">
         <nav>
             <h2 class="portfolio">Portfo<span>lio</span></h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a>Formação</a></li>
-                <li><a>Conhecimento</a></li>
-                <li><a>Premiações</a></li>
-            </ul>
+        <div class="hamburguer-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#conhecimento">Conhecimento</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#premiacoes">Premiações</a></li>
+        </ul>
         </nav>
         
         <div class="nome">
@@ -41,15 +47,55 @@
         </div>
     </div>
 
-    <section>
-        <div class="sobre" id="sobre">
+    <section id="sobre">
+        <div class="sobre">
             <h2>Sobre mim</h2>
             <p>Sou um graduado pela Faculdade de Informática e Administração Paulista (FIAP) com formação em Análise e Desenvolvimento de Sistemas. Minha base educacional abrange uma variedade de disciplinas, incluindo Java, HTML, CSS, JavaScript, Inteligência Artificial, Machine Learning, Chatbot e Quality Assurance, além disso, tive a oportunidade de vivenciar experiências colaborativas com diversas empresas, onde desenvolvemos e executamos projetos significativos.
-                Ao longo do curso concentrei-me e desenvolvi expertise em SQL, PL/SQL e Python. Esta especialização fortaleceu meu interesse na área de Data Science, onde almejo aplicar meus conhecimentos e competências técnicas para contribuir de forma significativa nesse campo.</p>
-            
-        </div>
-        
+            Ao longo do curso concentrei-me e desenvolvi expertise em SQL, PL/SQL e Python. Esta especialização fortaleceu meu interesse na área de Data Science, onde almejo aplicar meus conhecimentos e competências técnicas para contribuir de forma significativa nesse campo.</p>
+        </div>        
     </section>
-
+    
+    <div class="conhecimento" id="conhecimento">
+        <h2><span>Conhecimento</span></h2>
+        <div class="linguagens">
+            <div class="linguagem-item">
+                <img src="./img/python.png">
+                <h2>Python</h2>
+            </div>
+            <div class="linguagem-item">
+                <img src="./img/java.png">
+                <h2>Java</h2>
+            </div>
+            <div class="linguagem-item">
+                <img src="./img/sql.png">
+                <h2>SQL</h2>
+            </div>
+            <div class="linguagem-item">
+                <img src="./img/pl-sql.png">
+                <h2>PLSQL</h2>
+            </div>
+            <div class="linguagem-item">
+                <img src="./img/html5.png">
+                <h2>HTML</h2>
+            </div>
+            <div class="linguagem-item">
+                <img src="./img/css.png">
+                <h2>CSS</h2>
+            </div>
+            <div class="linguagem-item">
+                <img src="./img/javascript.png">
+                <h2>JavaScript</h2>
+            </div>
+            <div class="linguagem-item">
+                <img src="./img/mlerning.png">
+                <h2>Machine Learning</h2>
+            </div>
+        </div>
+    </div>
+    <div class="formacao" id="formacao">
+        <h2><span>Formação</span></h2>
+        <div class="formacao-item">
+        </div>
+    </div>
 </body>
 </html>

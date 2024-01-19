@@ -9,7 +9,7 @@
     height: 100vh;
     width: 100%;
     background-color: #0E0E0F;
-    
+    flex-wrap: wrap-reverse;
 }
 
 nav {
@@ -36,6 +36,54 @@ nav a {
 nav a:hover {
     color: #3454DC;
     transition: 0.2s;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 35px;
+}
+
+.hamburguer-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column; 
+        align-items: flex-end;
+        position: absolute;
+        top: 60px;
+        right: 0; 
+        background-color: #0E0E0F;
+        width: 100%; 
+        box-sizing: border-box;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .hamburguer-menu {
+        display: flex;
+    }
+
+    nav {
+        padding-bottom: 20px;
+    }
 }
 
 .portfolio {
@@ -96,12 +144,14 @@ p {
 
 .links {
     display: flex;
-    padding-top: 590px;
+    /*padding-top: 590px;
     padding-left: 561px;
+    */
 }
 
 .button {
     margin: 0 10px;
+    display: inline-block; 
 }
 
 .button img {
@@ -122,6 +172,7 @@ p {
     position: absolute;
     top: 40%;
     right: 30%;
+    margin: 0 auto; 
 }
 
 section {
@@ -148,4 +199,69 @@ section {
     text-align: justify; 
     padding-top: 25px;
     line-height:33px
+}
+
+.conhecimento {
+    padding-top: 150px;
+    padding-bottom: 20px;
+    background-color: #0E0E0F;
+    height: 10%;
+    text-align: center;
+}
+
+.conhecimento span {
+    color: #3454DC;
+}
+
+.conhecimento h2 {
+    margin: 10px;
+}
+
+.conhecimento img {
+    width: 40px;
+    height: 40px;
+    margin: 0 30px;
+}
+
+.linguagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 6%;
+    padding-right: 6%;
+    line-height:33px;
+}
+
+.linguagem-item {
+    width: calc(33.33% - 1px);
+    margin: 3px;
+    padding-top: 10px;
+    padding-bottom: -10px;
+    text-align: center;
+    border: 3px solid #141414; 
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.linguagem-item img {
+    width: 15%;
+    height: auto;
+    object-fit: cover;
+}
+
+.linguagem-item h2 {
+    margin-top: 5px;
+}
+
+.formacao {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-color: #0E0E0F;
+    height: 10%;
+    text-align: center;
+}
+
+.formacao span{
+    color: #3454DC;
 }
