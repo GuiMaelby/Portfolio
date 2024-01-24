@@ -163,6 +163,11 @@ h3 {
     text-align: center;
 }
 
+.galeria a{
+    text-decoration: none;
+    color: #3454DC;
+}
+
 .slides {
     display: flex;
     overflow: hidden;
@@ -210,3 +215,4 @@ button {
     background-color: #0E0E0F;
     text-align: center;
 }
+
