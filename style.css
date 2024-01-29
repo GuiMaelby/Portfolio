@@ -60,32 +60,6 @@ nav a:hover {
     margin: 5px 0;
 }
 
-@media screen and (max-width: 768px) {
-    .nav-list {
-        display: none;
-        flex-direction: column; 
-        align-items: flex-end;
-        position: absolute;
-        top: 60px;
-        right: 0; 
-        background-color: #0E0E0F;
-        width: 100%; 
-        box-sizing: border-box;
-    }
-
-    .nav-list.active {
-        display: flex;
-    }
-
-    .hamburguer-menu {
-        display: flex;
-    }
-
-    nav {
-        padding-bottom: 70px;
-    }
-}
-
 .portfolio {
     color: #ffffff;
     font-size: 35px;
@@ -190,7 +164,8 @@ p {
     position: absolute;
     top: 40%;
     right: 30%;
-    margin: 0 auto; 
+    margin: 30px auto; 
+    display: block;
     transition: box-shadow 0.3s ease;
 }
 
@@ -225,10 +200,13 @@ section {
 }
 
 .formacao {
+    display: flex;
+    flex-direction: column;
     padding-top: 50px;
     padding-bottom: 100px;
     background-color: #0E0E0F;
     text-align: center;
+
 }
 
 .formacoes {
@@ -244,6 +222,7 @@ section {
 
 .formacao-item {
     width: calc(33.33% - 1px);
+    margin-bottom: 20px;
 }
 
 .conhecimento {
@@ -302,3 +281,183 @@ section {
 .linguagem-item h2 {
     margin-top: 5px;
 }
+
+.premiacoes {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.premiacoes h2 {
+    color: #3454DC;
+}
+
+.galeria {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 4px 8px #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.galeria a{
+    text-decoration: none;
+    color: #3454DC;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%; 
+
+}
+
+.slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #ffffff;
+    box-shadow: #3454DC;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.proximo {
+    right: 10px;
+}
+
+@media screen and (max-width: 1660px) {
+    .nome {
+        text-align: center;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .links {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .button {
+        margin: 0 10px;
+        display: inline-block;
+    }
+
+    .minha-foto {
+        align-items: center;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin: -300px auto;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+    
+
+@media screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column; 
+        align-items: flex-end;
+        position: absolute;
+        top: 60px;
+        right: 0; 
+        background-color: #0E0E0F;
+        width: 100%; 
+        box-sizing: border-box;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .hamburguer-menu {
+        display: flex;
+    }
+
+    nav {
+        padding-bottom: 8px;
+    }
+
+    .sobre {
+        margin-top: 270vw;
+        padding-bottom: 200px;
+    }
+
+    .formacao {
+        padding-top: 250vw;   
+    }
+
+    .formacoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nome {
+        text-align: center;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .links {
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .button {
+        margin: 0 10px;
+        display: inline-block;
+    }
+
+    .minha-foto {
+        align-items: center;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        margin: -300px auto;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .galeria {
+        width: 85%;
+        margin-top: 10vh;
+    }
+
+    
+}
+
